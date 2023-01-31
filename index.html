@@ -410,7 +410,15 @@
         </div>
         <form class="form">
           <h2 class="footer-subtitle section-subtitle">Subscribe</h2>
-          <input type="email" name="email" />
+          <label for="mail"></label>
+          <input
+            type="email"
+            class="footer-mail"
+            name="user-mail"
+            id="mail"
+            placeholder="E-mail"
+            required
+          />
           <div class="footer-btn">
             <button type="submit" class="btn-subscribe">Subscribe</button>
             <svg class="frame" width="24" height="24">
@@ -421,13 +429,45 @@
       </div>
     </footer>
     <!--backdrop-->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop ishidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#modal-close"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <p class="modal-subtitle">
+            Leave your contacts and we will call you back
+          </p>
+          <label class="modal-form-field"
+            ><spn class="modal-desc">Name</spn
+            ><input type="text" class="modal-input"
+          /></label>
+          <label class="modal-form-field"
+            ><span class="modal-desc">Phone</span
+            ><input type="tel" class="modal-input"
+          /></label>
+          <label class="modal-form-field"
+            ><span class="modal-desc">Email</span
+            ><input type="email" class="modal-input"
+          /></label>
+          <label class="modal-form-field"
+            ><span class="modal-desc">Comment</span
+            ><textarea
+              name="user-message"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+          <input type="checkbox" name="user-policy" id="privacy-policy" />
+          <label for="privacy-policy"
+            >I accept the terms and conditions of the
+            <a href="">Privacy Policy</a></label
+          >
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
