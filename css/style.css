@@ -596,50 +596,42 @@ img {
   background-color: #31d0aa;
 }
 
-/* Form-footer */
-
-.form {
-  width: 453px;
-  height: 80px;
+/* footer-form */
+.footer-form {
   margin-left: 80px;
+}
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 455px;
 }
 
 .footer-mail {
-  display: inline-block;
   padding: 8px 16px;
-  width: 264px;
+  width: 265px;
   height: 40px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-/* .footer-btn {
-  display: inline-flex;
-  align-items: center;
-  padding: 8px 24px;
-  margin-left: 24px;
-
-  background: var(--main-btn-bcg-color);
-  border-radius: 4px;
-  transition: background-color 250ms var(--tm-function);
-} */
-
 .btn-subscribe {
-  display: inline-block;
-  padding: 8px 24px;
+  display: flex;
   width: 165px;
   height: 40px;
+  margin-left: 24px;
+  padding: 8px 24px;
 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-
   cursor: pointer;
 
   color: var(--second-btn-text-color);
   background: var(--main-btn-bcg-color);
   border: 0;
+  transition: background-color 250ms var(--tm-function);
 }
 
 .btn-subscribe:hover,
@@ -648,7 +640,11 @@ img {
 }
 
 .frame {
+  position: absolute;
+  top: 50%;
+  right: 24px;
   margin-left: 16px;
+  transform: translateY(-50%);
   fill: var(--main-bcg-color);
 }
 
@@ -742,6 +738,7 @@ img {
 
 .modal-desc {
   display: block;
+  margin-top: 8px;
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -750,8 +747,11 @@ img {
   color: #8e8f99;
 }
 
-.modal-desc:nth-child(-n + 2) {
-  margin-top: 8px;
+.modal-desc-name {
+  margin-top: 0;
+
+  line-height: 1.33;
+  letter-spacing: 0.04em;
 }
 
 .modal-input-wrap {
@@ -869,5 +869,5 @@ img {
 
   font-weight: 500;
   line-height: 1.5;
-  /* identical to box height, or 150% */
+  cursor: pointer;
 }
