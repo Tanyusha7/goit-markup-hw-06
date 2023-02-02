@@ -613,6 +613,8 @@ img {
   height: 40px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
+  background: var(--second-bcg-color);
+  border-radius: 4px;
 }
 
 .btn-subscribe {
@@ -631,6 +633,7 @@ img {
   color: var(--second-btn-text-color);
   background: var(--main-btn-bcg-color);
   border: 0;
+  border-radius: 4px;
   transition: background-color 250ms var(--tm-function);
 }
 
@@ -734,11 +737,12 @@ img {
 
 .modal-form-field {
   display: block;
+  margin-bottom: 8px;
 }
 
 .modal-desc {
   display: block;
-  margin-top: 8px;
+
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -748,8 +752,6 @@ img {
 }
 
 .modal-desc-name {
-  margin-top: 0;
-
   line-height: 1.33;
   letter-spacing: 0.04em;
 }
@@ -789,7 +791,12 @@ img {
   fill: var(--main-btn-text-color);
 }
 
+.modal-form-textarea {
+  margin-bottom: 16px;
+}
+
 .modal-form-message {
+  display: block;
   width: 100%;
   height: 120px;
   padding: 8px 16px;
@@ -816,7 +823,6 @@ img {
   display: flex;
   align-items: center;
 
-  margin-top: 16px;
   margin-bottom: 24px;
   font-size: 12px;
   line-height: 1.33;
